@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GM4 Hidden",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/Gamemode4Dev/GM4_Datapacks"
+      ],
+      "js": [
+        "source/modifyElements.js"
+      ]
+    }
+  ]
+}
