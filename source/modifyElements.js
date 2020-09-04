@@ -13,8 +13,8 @@ function update() {
       .then(data => {
         if (data.hidden === true || data.hidden === "true") {
           e.style.background = '#ebeef2'
-          const defaultFolderIconColor = "color-blue-3"
-          const newFolderIconColor = "color-gray-0"
+          const defaultFolderIconColor = "color-blue-3" // default color for github's folder octicon
+          const newFolderIconColor = "color-gray-0" // color of the octicon of hidden modules
 
           var folderIcon = e.children[0].getElementsByTagName('svg')[0]
           folderIcon.setAttribute("color",newFolderIconColor)
@@ -24,4 +24,4 @@ function update() {
       })
   })
 }
-update()
+window.addEventListener('load',update()) // Run payload once site has loaded
